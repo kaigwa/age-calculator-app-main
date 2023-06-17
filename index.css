@@ -1,0 +1,113 @@
+/* 
+- Weights: 400i, 700, 800i
+
+- Font size (inputs): 32px
+
+- Purple: hsl(259, 100%, 65%)
+- Light red: hsl(0, 100%, 67%)
+
+- White: hsl(0, 0%, 100%)
+- Off white: hsl(0, 0%, 94%)
+- Light grey: hsl(0, 0%, 86%)
+- Smokey grey: hsl(0, 1%, 44%)
+- Off black: hsl(0, 0%, 8%)
+ */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.google.com/specimen/Poppins');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    width: 375px;
+    background-color: hsl(0, 0%, 94%);
+    margin: 80px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container{
+    padding: 30px;
+    background-color: hsl(0, 0%, 100%);
+    width: 330px;
+    height: 360px;
+    border-radius: 20px 20px 80px;
+}
+
+.date{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.d{
+    color: hsl(0, 1%, 44%);
+    font-weight: 700;
+    font-size: 9px;
+}
+
+hr{
+    margin: 0 20px;
+    width: 90%;
+    border: 0.9px solid hsl(0, 0%, 86%);
+    /* background-color: brown;  */
+}
+
+input{
+    width: 60px;
+    height: 30px;
+    font-weight: 700;
+    border-radius: 4.5px;
+    border: 1px solid hsl(0, 0%, 86%);
+}
+
+.arrowline{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    /* padding: 30px; */
+    transform: translateY(49px);
+}
+
+.image{
+    width: 56px;
+    height: 56px;
+    background-color:hsl(259, 100%, 65%);
+    border-radius: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-29px);
+}
+
+.arrow{
+    width: 23px;
+    height: 23px;
+}
+
+.output{
+    transform: translateY(29px);
+}
+
+.output> p{
+    font-size: 37px;
+    font-weight: 800;
+    /* font-style:italic; */
+}
+
+span{
+    color: hsl(259, 100%, 65%);
+}
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
