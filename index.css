@@ -59,12 +59,34 @@ hr{
 }
 
 input{
+    cursor: pointer;
+    /* color: blue; */
     width: 60px;
     height: 30px;
     font-weight: 700;
     border-radius: 4.5px;
     border: 1px solid hsl(0, 0%, 86%);
 }
+
+input:hover{
+    border-color: hsl(259, 100%, 65%);
+}
+
+input[type='number']:focus{
+    color:hsl(0, 0%, 8%);
+    padding: 10px;
+    border: 1px solid hsl(259, 100%, 65%);
+}
+
+::placeholder {
+    color:hsl(0, 0%, 8%);
+    padding: 9px;
+}
+
+input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        display: none;
+      }
 
 .arrowline{
     display: flex;
@@ -84,6 +106,11 @@ input{
     justify-content: center;
     align-items: center;
     transform: translateY(-29px);
+    cursor: pointer;
+}
+
+.image:hover{
+    background-color: hsl(0, 0%, 8%);
 }
 
 .arrow{
@@ -98,7 +125,7 @@ input{
 .output> p{
     font-size: 37px;
     font-weight: 800;
-    /* font-style:italic; */
+    transform: skewX(-10deg);
 }
 
 span{
@@ -109,5 +136,7 @@ span{
 }
 
 .attribution a { 
-    color: hsl(228, 45%, 44%); 
+    font-size: 13px;
+    text-decoration: none;
+    color:hsl(259, 100%, 65%); 
 }
