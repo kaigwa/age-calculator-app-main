@@ -78,6 +78,11 @@ input[type='number']:focus{
     border: 1px solid hsl(259, 100%, 65%);
 }
 
+/* input:focus{
+    border: 1px solid blue;
+
+} */
+
 ::placeholder {
     color:hsl(0, 0%, 8%);
     padding: 9px;
@@ -86,7 +91,12 @@ input[type='number']:focus{
 input::-webkit-outer-spin-button,
       input::-webkit-inner-spin-button {
         display: none;
-      }
+}
+
+.required, .valid{
+    display: none;
+    color: hsl(0, 100%, 67%);
+}
 
 .arrowline{
     display: flex;
@@ -96,7 +106,8 @@ input::-webkit-outer-spin-button,
     transform: translateY(49px);
 }
 
-.image{
+#btn{
+    border: none;
     width: 56px;
     height: 56px;
     background-color:hsl(259, 100%, 65%);
@@ -109,7 +120,7 @@ input::-webkit-outer-spin-button,
     cursor: pointer;
 }
 
-.image:hover{
+#btn:hover{
     background-color: hsl(0, 0%, 8%);
 }
 
@@ -131,8 +142,10 @@ input::-webkit-outer-spin-button,
 span{
     color: hsl(259, 100%, 65%);
 }
+
 .attribution { 
-    font-size: 11px; text-align: center; 
+    font-size: 11px; 
+    text-align: center; 
 }
 
 .attribution a { 

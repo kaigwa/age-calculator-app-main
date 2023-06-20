@@ -16,32 +16,38 @@
       <div class="date">
         <div>
           <p class="d">DAY</p>
-          <input type="number" name="" placeholder="DD" id="">
+          <input type="number" name="" placeholder="DD" id="birth_date">
+          <span class="required">This field is required</span>
+          <span class="valid">Must be a valid day</span>
         </div>
 
         <div>
           <p class="d">MONTH</p>
-          <input type="number" name="" placeholder="MM" id="">
+          <input type="number" name="" placeholder="MM" id="birth_date">
+          <span class="required">This field is required</span>
+          <span class="valid">Must be a valid month</span>
         </div>
 
         <div>
           <p class="d">YEAR</p>
-          <input type="number" name="" placeholder="YYYY" id="">
+          <input type="number" name="" placeholder="YYYY" id="birth_date">
+          <span class="required">This field is required</span>
+          <span class="valid">Must be in he past</span>
         </div>
       </div>
 
       <div class="arrowline">
         <hr>
-        <div class="image">
+        <button id="btn">
           <img class="arrow" src="./assets/images/icon-arrow.svg" alt="mobile">
-        </div>
+        </button>
       </div>
       
 
       <div class="output">
-        <p><span>38</span> years</p>
-        <p><span>3</span> months</p>
-        <p><span>26</span> days</p>
+        <p><span id="year">--</span> years</p>
+        <p><span id="month">--</span> months</p>
+        <p><span id="day">--</span> days</p>
       </div>
 
     </div>
