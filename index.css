@@ -1,5 +1,5 @@
 /*  -CSS 
-    -card style section - mobile device mode 
+    -card style section || mobile device mode 
     */
 
 *{
@@ -131,7 +131,7 @@ hr{
     height: 23px;
 }
 
-/* calculated year/month/day ouput style section */
+/* calculated year || month || day ouput style section */
 .output{
     /* background-color: blueviolet; */
     transform: translateY(29px);
@@ -216,7 +216,7 @@ span{
         border-radius: 60px;
     }
 
-    /* calculated year/month/day ouput style section */
+    /* calculated year || month || day ouput style section */
     .output{
         transform: translateX(29px);
         position: relative;
