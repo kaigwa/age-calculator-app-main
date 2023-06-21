@@ -1,4 +1,7 @@
-/* card style section - mobile device mode */
+/*  -CSS 
+    -card style section - mobile device mode 
+    */
+
 *{
     padding: 0;
     margin: 0;
@@ -77,7 +80,7 @@ input::-webkit-outer-spin-button,
         display: none;
 }
 
-/* error message alert */
+/* error message alert section*/
 .required, .valid{
     color: hsl(0, 100%, 67%);
     font-size: 7px;
