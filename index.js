@@ -51,14 +51,14 @@ const inputValidate = () =>{
         errorAlert[0].textContent = 'This field is required';
         input[0].style.border = '0.9px solid hsl(0, 100%, 67%)';
         errorP[0].style.color = 'hsl(0, 100%, 67%)';
-        displayAge.forEach(item =>item.textContent = '--' )
+        // displayAge.forEach(item =>item.textContent = '--' )
     } 
-    else if(dayvalue > numberOfMonth[monthvalue - 1]|| 
+    else if(dayvalue > numberOfMonth|| 
         dayvalue < 1){
         errorAlert[0].textContent = 'Must be a valid date';
         input[0].style.border = '0.9px solid hsl(0, 100%, 67%)';
         errorP[0].style.color = 'hsl(0, 100%, 67%)';
-        displayAge.forEach(item =>item.textContent = '--' )
+        // displayAge.forEach(item =>item.textContent = '--' )
     } 
     else {
         errorAlert[0].textContent = ''
@@ -71,13 +71,13 @@ const inputValidate = () =>{
         errorAlert[1].textContent = 'This field is required';
         input[1].style.border = '0.9px solid hsl(0, 100%, 67%)';
         errorP[1].style.color = 'hsl(0, 100%, 67%)';
-        displayAge.forEach(item =>item.textContent = '--' )
+        // displayAge.forEach(item =>item.textContent = '--' )
     } 
     else if(monthvalue > 12|| monthvalue < 1){
         errorAlert[1].textContent = 'Must be a valid month';
         input[1].style.border = '0.9px solid hsl(0, 100%, 67%)';
         errorP[1].style.color = 'hsl(0, 100%, 67%)';
-        displayAge.forEach(item =>item.textContent = '--' )
+        // displayAge.forEach(item =>item.textContent = '--' )
     }
     else {
         errorAlert[1].textContent = ''
@@ -90,7 +90,7 @@ const inputValidate = () =>{
         errorAlert[2].textContent = 'This field is required';
         input[2].style.border = '0.9px solid hsl(0, 100%, 67%)';
         errorP[2].style.color = 'hsl(0, 100%, 67%)';
-        displayAge.forEach(item =>item.textContent = '--' )
+        // displayAge.forEach(item =>item.textContent = '--' )
 
     } 
     else if(yearvalue > todayYear|| 
@@ -98,7 +98,7 @@ const inputValidate = () =>{
         errorAlert[2].textContent = 'Must be in the past';
         input[2].style.border = '0.9px solid hsl(0, 100%, 67%)';
         errorP[2].style.color = 'hsl(0, 100%, 67%)';
-        displayAge.forEach(item =>item.textContent = '--' )
+        // displayAge.forEach(item =>item.textContent = '--' )
     }
     else {
         errorAlert[2].textContent = ''

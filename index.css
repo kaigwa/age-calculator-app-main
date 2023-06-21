@@ -1,18 +1,4 @@
-/* 
-- Weights: 400i, 700, 800i
-
-- Font size (inputs): 32px
-
-- Purple: hsl(259, 100%, 65%)
-- Light red: hsl(0, 100%, 67%)
-
-- White: hsl(0, 0%, 100%)
-- Off white: hsl(0, 0%, 94%)
-- Light grey: hsl(0, 0%, 86%)
-- Smokey grey: hsl(0, 1%, 44%)
-- Off black: hsl(0, 0%, 8%)
- */
-
+/* card style section - mobile device mode */
 *{
     padding: 0;
     margin: 0;
@@ -40,6 +26,7 @@ body{
     box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;;
 }
 
+/* date || input section */
 .date{
     display: flex;
     flex-direction: row;
@@ -56,13 +43,6 @@ body{
     color: hsl(0, 1%, 44%);
     font-weight: 700;
     font-size: 9px;
-}
-
-hr{
-    margin: 0 20px;
-    width: 90%;
-    border: 0.9px solid hsl(0, 0%, 86%);
-    /* background-color: brown;  */
 }
 
 input{
@@ -93,23 +73,32 @@ input[type = 'number']:hover{
     color: hsl(0, 1%, 44%);
 }
 
+/* remove default input number button */
 input::-webkit-outer-spin-button,
       input::-webkit-inner-spin-button {
         display: none;
 }
 
+/* error message alert */
 .required, .valid{
     color: hsl(0, 100%, 67%);
     font-size: 7px;
     font-style: italic;
 }
 
+
+/* line || button style section */
 .arrowline{
     display: flex;
     flex-direction:column;
     align-items: center;
-    /* padding: 30px; */
     transform: translateY(49px);
+}
+
+hr{
+    margin: 0 20px;
+    width: 90%;
+    border: 0.9px solid hsl(0, 0%, 86%);
 }
 
 #btn{
@@ -140,6 +129,7 @@ input::-webkit-outer-spin-button,
     height: 23px;
 }
 
+/* calculated year/month/day ouput style section */
 .output{
     transform: translateY(29px);
 }
@@ -154,6 +144,7 @@ span{
     color: hsl(259, 100%, 65%);
 }
 
+/* source and coder style section */
 .attribution { 
     font-size: 11px; 
     text-align: center; 
@@ -178,36 +169,7 @@ span{
         height: 479px;
     }
 
-    .output{
-        transform: translateX(29px);
-        position: relative;
-        top: 10px;
-    }
-
-    .output> p{
-        font-size: 70px;
-        line-height: 78px;
-    }
-
-    .arrow{
-        width: 33px;
-        height: 33px;
-    }
-
-    #btn{
-        position: relative;
-        left: 43%;
-        bottom: 6px; 
-        width: 69px;
-        height: 69px;
-        border-radius: 60px;
-        /* transform: translateX(39px); */
-    }
-
-    .d{
-        font-size: 11px;
-    }
-
+     /* date || input section */
     .date{
         display: flex;
         flex-direction: row;
@@ -225,11 +187,42 @@ span{
 
     input[type = 'number']{
         font-size: 26px;
-        /* font-weight: bolder; */
     }
 
+    .d{
+        font-size: 11px;
+    }
+
+    /* error message alert */
     .required, .valid{
         font-size: 12px;
+    }
+
+    /* line || button style section */
+    .arrow{
+        width: 33px;
+        height: 33px;
+    }
+
+    #btn{
+        position: relative;
+        left: 43%;
+        bottom: 6px; 
+        width: 69px;
+        height: 69px;
+        border-radius: 60px;
+    }
+
+    /* calculated year/month/day ouput style section */
+    .output{
+        transform: translateX(29px);
+        position: relative;
+        top: 10px;
+    }
+
+    .output> p{
+        font-size: 70px;
+        line-height: 78px;
     }
 
 }
